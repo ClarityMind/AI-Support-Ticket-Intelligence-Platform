@@ -1,19 +1,20 @@
 [project]
 name = "ai-support-ticket-intelligence-platform"
 version = "0.1.0"
-description = "Add your description here"
+description = "Reproducible classical ML baselines for support queue and priority classification"
 readme = "README.md"
 authors = [
-    { name = "CM", email = "vladtsiperko.2015@gmail.com" }
+    { name = "CM" }
 ]
 requires-python = ">=3.12"
 dependencies = [
     "pandas>=3.0.5",
     "scikit-learn>=1.9.0",
+    "joblib>=1.5.3",
 ]
 
 [project.scripts]
-ai-support-ticket-intelligence-platform = "ai_support_ticket_intelligence_platform:main"
+support-ticket-ml = "ai_support_ticket_intelligence_platform.cli:main"
 
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
